@@ -1,0 +1,232 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #333 repeat;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  & .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: 5s fadeIn;
+    animation-fill-mode: forwards;
+    margin: 20px;
+    visibility: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    flex-basis: 20%;
+    &:hover {
+      box-shadow: 0 4px 8px 10px rgba(1, 1, 1, 0.6);
+    }
+    & img {
+      width: 100%;
+    }
+    & .skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      position: relative;
+      background-color: #ebebeb;
+      h3 {
+        padding-left: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+ul {
+  padding-top: 15px;
+  list-style-type: none;
+
+  & > li {
+    margin-bottom: 40px;
+    background: #000;
+    height: 14px;
+    border-radius: 3px;
+    border-left: 1px solid #111;
+    border-top: 1px solid #111;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    width: 250px;
+    left: -20px;
+    position: relative;
+    & i {
+      position: relative;
+      top: -30px;
+      width: 250px;
+    }
+    & span {
+      height: 10px;
+      margin: 2px 0;
+      background: #39ff14;
+      position: absolute;
+      width: 250px;
+      box-shadow: 0px 0px 10px 1px rgba(67, 255, 20, 0.4);
+      &:hover {
+        box-shadow: 0px 0px 10px 10px rgba(67, 255, 20, 0.4);
+      }
+    }
+  }
+}
+
+.html5 {
+  width: 90%;
+  animation: html5 4s ease-out;
+}
+.css3 {
+  width: 50%;
+  animation: css3 4s ease-out;
+}
+.js {
+  width: 80%;
+  animation: js 4s ease-out;
+}
+
+/* Animations */
+
+@keyframes html5 {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-moz-keyframes html5 {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-webkit-keyframes html5 {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css3 {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@-moz-keyframes css3 {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@-webkit-keyframes css3 {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes js {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@-webkit-keyframes js {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-moz-keyframes js {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
